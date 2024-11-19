@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Contact - Animalangs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+
+/* Estilos para la sección de contacto */
+body .contacto-container {
+    background-color: #ffffff; /* Fondo blanco limpio */
+    padding: 60px; /* Aumentado para más espacio interno */
+    border-radius: 15px;
+    max-width: 770px; /* Reducir un 30% de 1100px */
+    width: 80%; /* Ajustar para que no ocupe todo el ancho disponible */
+    margin: 60px auto; /* Más separación superior */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Sombra suave */
+    text-align: center;
+    border: 1px solid #e0e0e0; /* Borde claro para resaltar el contenedor */
+}
+
+body .contacto-container h2 {
+    font-size: 2.4em; /* Tamaño ligeramente más grande */
+    color: #2c3e50; /* Tono azul oscuro para profesionalismo */
+    margin-bottom: 30px; /* Más separación del contenido */
+    font-family: 'Playfair Display', serif; /* Tipografía elegante */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra sutil en el texto */
+}
+
+body .contacto-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px; /* Ajusta el padding según sea necesario */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    max-width: 600px; /* Cambia el ancho máximo según tus necesidades */
+    margin: 0 auto; /* Centra el formulario dentro del contenedor */
+}
+
+body .contacto-container input, 
+body .contacto-container textarea, 
+body .contacto-container button {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    box-sizing: border-box; /* Asegura que el padding no desborde el ancho */
+}
+
+body .contacto-container input, 
+body .contacto-container textarea {
+    padding: 15px 20px; /* Más espacio interno para mejorar la legibilidad */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid #ccc;
+    font-size: 1.1em; /* Tamaño de fuente mejorado */
+    box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra interior */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Roboto', sans-serif; /* Tipografía limpia y moderna */
+}
+
+/* Efecto de enfoque en los campos */
+body .contacto-container input:focus, 
+body .contacto-container textarea:focus {
+    border-color: #48a9a6; /* Color de borde al enfocar */
+    box-shadow: 0 0 8px rgba(72, 169, 166, 0.3); /* Sombra suave al enfocar */
+    outline: none; /* Elimina el borde azul predeterminado */
+}
+
+body .contacto-container textarea {
+    resize: vertical;
+    height: 200px; /* Altura adecuada por defecto */
+}
+
+body .contacto-container button {
+    background-color: #48a9a6;
+    color: white;
+    padding: 15px 0; /* Ajustar padding para que ocupe todo el ancho */
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto hover en el botón */
+body .contacto-container button:hover {
+    background-color: #21867a; /* Tono más oscuro al hacer hover */
+    transform: scale(1.03); /* Ligeramente más grande */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2); /* Sombra más marcada */
+}
+
+
+</style>
+  </head>
+  <body>
+<!-- Encabezado con logo y menú -->
+<header class="encabezado-principal">
+  <a href="index_en.html" class="logo-container">
+    <img src="imagenes/logo-animalangs.png" alt="Animalangs Logo" id="logo-animalangs">
+  </a>
+  <nav class="menu-principal">
+    <a href="index_en.html"><i class="fas fa-home"></i> Home</a>
+    <a href="cursos_en.html"><i class="fas fa-graduation-cap"></i> Courses</a>
+    <!-- Menú desplegable de Blog -->
+    <div class="blog-dropdown">
+      <a href="#"><i class="fas fa-blog"></i> Blog <i class="fas fa-caret-down"></i></a>
+      <div class="blog-content">
+        <a href="/blog/ingles.html"><img src="iconos/flag-usa.png" alt="Inglés" class="flag-icon"> Inglês</a>
+        <a href="/blog/frances.html"><img src="iconos/flag-france.png" alt="Francés" class="flag-icon"> Francês</a>
+        <a href="/blog/aleman.html"><img src="iconos/flag-germany.png" alt="Alemán" class="flag-icon"> Alemão</a>
+        <a href="/blog/italiano.html"><img src="iconos/flag-italy.png" alt="Italiano" class="flag-icon"> Italiano</a>
+        <a href="/blog/espanol.html"><img src="iconos/flag-spain.png" alt="Español" class="flag-icon"> Espanhol</a>
+        <a href="/blog/portugues.html"><img src="iconos/flag-brazil.png" alt="Portugués" class="flag-icon"> Português</a>
+        <a href="/blog/chino.html"><img src="iconos/flag-china.png" alt="Chino" class="flag-icon"> Chinês</a>
+        <a href="/blog/ruso.html"><img src="iconos/flag-russia.png" alt="Ruso" class="flag-icon"> Russo</a>
+        <a href="/blog/holandes.html"><img src="iconos/flag-netherlands.png" alt="Holandés" class="flag-icon"> Holandês</a>
+        <a href="/blog/latin.html"><img src="iconos/flag-vatican.png" alt="Latín" class="flag-icon"> Latim</a>
+      </div>
+    </div>
+    <a href="contacto_en.html"><i class="fas fa-envelope"></i> Contact</a>
+  </nav>
+  <div class="acciones-encabezado">
+    <div class="flags">
+      <a href="contacto_en.html"><img src="iconos/flag-usa.png" alt="English" class="flag-icon"></a>
+      <a href="contacto.html"><img src="iconos/flag-spain.png" alt="Español" class="flag-icon"></a>
+      <a href="contacto_pt.html"><img src="iconos/flag-brazil.png" alt="Português" class="flag-icon"></a>
+    </div>
+  </div>
+</header>
+
+
+    <!-- Sección de Contacto -->
+    <section class="contacto-container">
+      <h2>Get in Touch with Us</h2>
+      <form id="contactoForm" action="/submit" method="POST">
+        <input type="hidden" name="_csrf" id="csrfToken">
+        <input type="text" id="username" name="username" placeholder="Name" required>
+        <input type="email" id="email" name="email" placeholder="E-mail" required>
+        <textarea id="mensaje" name="mensaje" rows="8" placeholder="Leave Your Message" required></textarea>
+        <button type="submit">Send It</button>
+      </form>
+      <!-- Elementos para mensajes de respuesta y error -->
+      <p id="responseMessage" style="display:none; color: green;"></p>
+      <p id="errorMessage" style="display:none; color: red;"></p>
+    </section>
+
+
+    <footer>
+      <p>&copy; 2024 Animalangs. All rights reserved.</p>
+    </footer>
+
+<!-- Validación y envío con JavaScript -->
+<script>
+  document.getElementById("contactoForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // Evitar que se recargue la página
+
+    const nombre = document.getElementById("username").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const mensaje = document.getElementById("mensaje").value.trim();
+    const csrfToken = document.getElementById("csrfToken").value;
+    const responseMessage = document.getElementById("responseMessage");
+    const errorMessage = document.getElementById("errorMessage");
+
+    if (!nombre || !email || !mensaje) {
+      errorMessage.textContent = "Todos los campos son obligatorios.";
+      errorMessage.style.display = "block";
+      return;
+    } else if (!validateEmail(email)) {
+      errorMessage.textContent = "Por favor, introduce un correo electrónico válido.";
+      errorMessage.style.display = "block";
+      return;
+    }
+
+    fetch('/submit', {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'application/json',
+    'CSRF-Token': document.getElementById('csrfToken').value // Pasa el token aquí
+  },
+  body: JSON.stringify({ username, email, mensaje })
+})
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Error al enviar los datos');
+      }
+      return response.json();
+    })
+    .then(data => {
+      responseMessage.textContent = "Correo enviado con éxito.";
+      responseMessage.style.display = "block";
+      errorMessage.style.display = "none";
+      document.getElementById("contactoForm").reset(); // Limpiar el formulario
+    })
+    .catch(error => {
+      errorMessage.textContent = "Error en el envío: " + error.message;
+      errorMessage.style.display = "block";
+    });
+  });
+
+  function validateEmail(email) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+  }
+
+  // Obtener el token CSRF al cargar la página
+  fetch('/get-csrf-token')
+    .then(response => response.json())
+    .then(data => {
+      document.getElementById('csrfToken').value = data.csrfToken; // Asigna el valor del token
+    })
+    .catch(error => console.error('Error al obtener el token CSRF:', error));
+</script>
+</body>
+</html>

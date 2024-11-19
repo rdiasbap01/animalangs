@@ -1,0 +1,72 @@
+[
+  {
+    "nombre": "English Course",
+    "descripcion": "Master English in 100 days and unlock new opportunities! Start now!",
+    "imagen": "imagenes/ingles.png",
+    "precio": "$13.99",
+    "enlace": "https://www.udemy.com/course/ingles-5-palavras-curso-a1-espanol-iniciantes/?referralCode=FF3301CB152D3A5ADCC9"
+  },
+  {
+    "nombre": "French Course",
+    "descripcion": "Speak French like a pro in 100 days! Enroll today!",
+    "imagen": "imagenes/frances.png",
+    "precio": "$13.99",
+    "enlace": "https://www.udemy.com/curso-frances"
+  },
+  {
+    "nombre": "German Course",
+    "descripcion": "Get fluent in German in 100 days for just $13.99!",
+    "imagen": "imagenes/aleman.png",
+    "precio": "$13.99",
+    "enlace": "https://www.udemy.com/curso-aleman"
+  },
+  {
+    "nombre": "Italian Course",
+    "descripcion": "Speak Italian like a native in just 3 months! Sign up now!",
+    "imagen": "imagenes/italiano.png",
+    "precio": "$13.99",
+    "enlace": "https://www.udemy.com/curso-italiano"
+  },
+  {
+    "nombre": "Spanish Course",
+    "descripcion": "Master Spanish easily and have fun while learning! Get started now!",
+    "imagen": "imagenes/espanol.png",
+    "precio": "$13.99",
+    "enlace": "https://www.udemy.com/curso-espanol"
+  },
+  {
+    "nombre": "Portuguese Course",
+    "descripcion": "Become fluent in Portuguese faster than you think! Enroll now!",
+    "imagen": "imagenes/portugues.png",
+    "precio": "$13.99",
+    "enlace": "https://www.udemy.com/curso-portugues"
+  },
+  {
+    "nombre": "Chinese Course",
+    "descripcion": "Ready for the challenge? Learn Chinese step by step! Start today!",
+    "imagen": "imagenes/chino.png",
+    "precio": "$13.99",
+    "enlace": "https://www.udemy.com/curso-chino"
+  },
+  {
+    "nombre": "Russian Course",
+    "descripcion": "Master Russian from scratch and start your journey now!",
+    "imagen": "imagenes/ruso.png",
+    "precio": "$13.99",
+    "enlace": "https://www.udemy.com/curso-ruso"
+  },
+  {
+    "nombre": "Dutch Course",
+    "descripcion": "Master Dutch and transform your future! Enroll now!",
+    "imagen": "imagenes/holandes.png",
+    "precio": "$13.99",
+    "enlace": "https://www.udemy.com/curso-holandes"
+  },
+  {
+    "nombre": "Latin Course",
+    "descripcion": "Latin never goes out of style! Master it with our interactive courses!",
+    "imagen": "imagenes/latin.png",
+    "precio": "$13.99",
+    "enlace": "https://www.udemy.com/curso-latin"
+  }
+]

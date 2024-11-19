@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cursos - Animalangs</title>
+    <meta name="description" content="Accede a nuestros cursos de idiomas en línea, desde niveles básicos hasta avanzados. Mejora tus habilidades lingüísticas con Animalangs.">
+    <meta name="keywords" content="cursos de inglés, cursos de francés, cursos de idiomas en línea, nivel A1 a C2">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Enlace a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+  <body>
+<!-- Encabezado con logo y menú -->
+<header class="encabezado-principal">
+  <a href="index.html" class="logo-container">
+    <img src="imagenes/logo-animalangs.png" alt="Animalangs Logo" id="logo-animalangs">
+  </a>
+  <nav class="menu-principal">
+    <a href="index.html"><i class="fas fa-home"></i> Inicio</a>
+    <a href="cursos.html"><i class="fas fa-graduation-cap"></i> Cursos</a>
+    <!-- Menú desplegable de Blog -->
+    <div class="blog-dropdown">
+      <a href="#"><i class="fas fa-blog"></i> Blog <i class="fas fa-caret-down"></i></a>
+      <div class="blog-content">
+        <a href="/blog/ingles.html"><img src="iconos/flag-usa.png" alt="Inglés" class="flag-icon"> Inglés</a>
+        <a href="/blog/frances.html"><img src="iconos/flag-france.png" alt="Francés" class="flag-icon"> Francés</a>
+        <a href="/blog/aleman.html"><img src="iconos/flag-germany.png" alt="Alemán" class="flag-icon"> Alemán</a>
+        <a href="/blog/italiano.html"><img src="iconos/flag-italy.png" alt="Italiano" class="flag-icon"> Italiano</a>
+        <a href="/blog/espanol.html"><img src="iconos/flag-spain.png" alt="Español" class="flag-icon"> Español</a>
+        <a href="/blog/portugues.html"><img src="iconos/flag-brazil.png" alt="Portugués" class="flag-icon"> Portugués</a>
+        <a href="/blog/chino.html"><img src="iconos/flag-china.png" alt="Chino" class="flag-icon"> Chino</a>
+        <a href="/blog/ruso.html"><img src="iconos/flag-russia.png" alt="Ruso" class="flag-icon"> Ruso</a>
+        <a href="/blog/holandes.html"><img src="iconos/flag-netherlands.png" alt="Holandés" class="flag-icon"> Holandés</a>
+        <a href="/blog/latin.html"><img src="iconos/flag-vatican.png" alt="Latín" class="flag-icon"> Latín</a>
+      </div>
+    </div>
+    <a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a>
+  </nav>
+  <div class="acciones-encabezado">
+    <div class="flags">
+      <a href="cursos_en.html"><img src="iconos/flag-usa.png" alt="English" class="flag-icon"></a>
+      <a href="cursos.html"><img src="iconos/flag-spain.png" alt="Español" class="flag-icon"></a>
+      <a href="cursos_pt.html"><img src="iconos/flag-brazil.png" alt="Português" class="flag-icon"></a>
+    </div>
+  </div>
+</header>
+
+
+  
+
+<!-- Barra de búsqueda -->
+<input type="text" id="barra-busqueda" placeholder="Buscar curso..." style="margin-bottom: 20px;">
+
+
+    <!-- Contenido principal -->
+    <section>
+      <h2 class="titulo-centralizado">15 Semanas para Dominar Tu Idioma Favorito</h2>
+      <p class="subtitulo-centralizado">Metodología comprobada para aprender de manera rápida y efectiva. ¡Elije tu idioma favorito!</p>    
+      <div id="lista-cursos" class="cursos-container">
+        <!-- Cada curso se generará dinámicamente aquí -->
+      </div>
+    </section>
+
+<!-- Formulario de Suscripción -->
+<section id="suscripcion" class="suscripcion fade-in">
+  <h2>Suscríbete a nuestro boletín</h2>
+  <form id="suscripcion-form" method="post">
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    <input type="email" id="email" name="email" placeholder="tuemail@gmail.com" required>
+    <button type="submit">Suscribirse</button>
+  </form>  
+  <div id="mensaje-suscripcion" style="font-weight: bold; margin-top: 10px;"></div> <!-- Contenedor para el mensaje -->
+</section>
+
+
+<script>
+document.getElementById('suscripcion-form').addEventListener('submit', function(event) {
+  const email = document.getElementById('email').value;
+
+  // Validación del email
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    alert('Por favor, introduce un correo electrónico válido.');
+    event.preventDefault(); // Evita que el formulario se envíe
+  }
+});
+
+
+// Seleccionar el contenedor donde se insertarán los cursos
+const listaCursos = document.getElementById('lista-cursos');
+
+// Generar el contenido dinámicamente
+cursos.forEach(curso => {
+  const cursoDiv = document.createElement('div');
+  cursoDiv.classList.add('curso');
+
+  const img = document.createElement('img');
+  img.src = curso.imagen;
+  img.alt = `Imagen de ${curso.nombre}`;
+  img.classList.add('imagen-curso');
+
+  const nombreCurso = document.createElement('h2');
+  nombreCurso.classList.add('titulo-curso');
+
+  const enlaceCurso = document.createElement('a');
+  enlaceCurso.href = curso.enlace;
+  enlaceCurso.textContent = curso.nombre;
+
+  const descripcionCurso = document.createElement('p');
+  descripcionCurso.textContent = curso.descripcion;
+
+  nombreCurso.appendChild(enlaceCurso);
+  cursoDiv.appendChild(img);
+  cursoDiv.appendChild(nombreCurso);
+  cursoDiv.appendChild(descripcionCurso);
+
+
+
+  // Añadir el curso al contenedor
+  listaCursos.appendChild(cursoDiv);
+});
+</script>
+
+    <!-- Pie de página -->
+    <footer>
+      <div>
+        <h3>Animalangs</h3>
+        <p>Contacto: info@animalangs.com</p>
+      </div>
+      <div>
+        <p>Síguenos en:</p>
+        <a href="https://www.facebook.com/profile.php?id=61556576940972" target="_blank">
+          <img src="iconos/icons8-facebook-48.png" alt="Facebook" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com/animalangs_/" target="_blank">
+          <img src="iconos/icons8-instagram-48.png" alt="Instagram" width="24" height="24">
+        </a>
+        <a href="https://www.youtube.com/@AnimalangsEnglish/videos" target="_blank">
+          <img src="iconos/icons8-youtube-50.png" alt="YouTube" width="24" height="24">
+        </a>
+      </div>
+      <p>&copy; 2024 Animalangs. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Código de Tawk.to justo antes del cierre del body -->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/67032a6537379df10df30ba9/1i9i5r7l3';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+      })();
+    </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById('suscripcion-form');
+    const messageContainer = document.getElementById('mensaje-suscripcion'); // Contenedor para los mensajes
+
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault(); // Evita el envío estándar del formulario
+
+      const formData = new FormData(form);
+      const data = Object.fromEntries(formData.entries());
+
+      try {
+        const response = await fetch('http://localhost:4000/suscripcion', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        const result = await response.json();
+
+        // Mostrar mensaje estilizado
+        messageContainer.textContent = result.message;
+        messageContainer.style.display = 'block'; // Asegúrate de que sea visible
+        messageContainer.style.color = result.message.includes('exitosamente') ? 'green' : 'red'; // Color del mensaje
+      } catch (error) {
+        console.error('Error:', error);
+        messageContainer.textContent = 'Ocurrió un error al procesar tu suscripción.';
+        messageContainer.style.color = 'red'; // Mensaje de error
+      }
+    });
+  });
+</script>
+
+<script>
+  document.getElementById('barra-busqueda').addEventListener('input', function() {
+    const query = this.value.toLowerCase();
+    const cursosDivs = document.querySelectorAll('.curso');
+  
+    cursosDivs.forEach(cursoDiv => {
+      const nombreCurso = cursoDiv.querySelector('.titulo-curso a').textContent.toLowerCase();
+      const descripcionCurso = cursoDiv.querySelector('p').textContent.toLowerCase();
+      
+      if (nombreCurso.includes(query) || descripcionCurso.includes(query)) {
+        cursoDiv.style.display = 'block'; // Mostrar el curso si coincide
+      } else {
+        cursoDiv.style.display = 'none'; // Ocultar el curso si no coincide
+      }
+    });
+  });
+  </script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('cursos.json')
+      .then(response => response.json())
+      .then(cursosData => {
+        // Seleccionar el contenedor donde se insertarán los cursos
+        const listaCursosContainer = document.getElementById('lista-cursos');
+
+        // Generar el contenido dinámicamente
+        cursosData.forEach(curso => {
+          const cursoDiv = document.createElement('div');
+          cursoDiv.classList.add('curso');
+
+          const img = document.createElement('img');
+          img.src = curso.imagen;
+          img.alt = `Imagen de ${curso.nombre}`;
+          img.classList.add('imagen-curso');
+
+          const nombreCurso = document.createElement('h2');
+          nombreCurso.classList.add('titulo-curso');
+
+          const enlaceCurso = document.createElement('a');
+          enlaceCurso.href = curso.enlace;
+          enlaceCurso.textContent = curso.nombre;
+          enlaceCurso.target = "_blank"; // Abrir en una nueva pestaña
+
+          const descripcionCurso = document.createElement('p');
+          descripcionCurso.textContent = curso.descripcion;
+
+          const precioCurso = document.createElement('p');
+          precioCurso.classList.add('precio-curso');
+          precioCurso.textContent = `Precio: ${curso.precio}`;
+
+          nombreCurso.appendChild(enlaceCurso);
+          cursoDiv.appendChild(img);
+          cursoDiv.appendChild(nombreCurso);
+          cursoDiv.appendChild(descripcionCurso);
+          cursoDiv.appendChild(precioCurso);
+
+          // Añadir el curso al contenedor
+          listaCursosContainer.appendChild(cursoDiv);
+        });
+      })
+      .catch(error => {
+        console.error('Error al cargar los datos del curso:', error);
+      });
+  });
+</script>
+
+  
+  
+  </body>
+</html>

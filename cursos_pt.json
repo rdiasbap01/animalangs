@@ -1,0 +1,72 @@
+[
+  {
+    "nombre": "Curso de Inglês",
+    "descripcion": "Domine o Inglês em 100 dias e abra novas oportunidades! Comece agora!",
+    "imagen": "imagenes/ingles.png",
+    "precio": "R$ 50",
+    "enlace": "https://www.udemy.com/course/ingles-5-palavras-curso-a1-espanol-iniciantes/?referralCode=FF3301CB152D3A5ADCC9"
+  },
+  {
+    "nombre": "Curso de Francês",
+    "descripcion": "Aprenda Francês de forma rápida e torne-se um especialista em 100 dias!",
+    "imagen": "imagenes/frances.png",
+    "precio": "R$ 50",
+    "enlace": "https://www.udemy.com/curso-frances"
+  },
+  {
+    "nombre": "Curso de Alemão",
+    "descripcion": "Alemão fluente em 100 dias por apenas 50 reais?",
+    "imagen": "imagenes/aleman.png",
+    "precio": "R$ 50",
+    "enlace": "https://www.udemy.com/curso-aleman"
+  },
+  {
+    "nombre": "Curso de Italiano",
+    "descripcion": "Fale Italiano como um nativo em apenas 3 meses! Inscreva-se agora!",
+    "imagen": "imagenes/italiano.png",
+    "precio": "R$ 50",
+    "enlace": "https://www.udemy.com/curso-italiano"
+  },
+  {
+    "nombre": "Curso de Espanhol",
+    "descripcion": "Conquiste o Espanhol de forma fácil e divertida! Aprenda agora!",
+    "imagen": "imagenes/espanol.png",
+    "precio": "R$ 50",
+    "enlace": "https://www.udemy.com/curso-espanol"
+  },
+  {
+    "nombre": "Curso de Português",
+    "descripcion": "Domine o Português em menos tempo do que imagina! Inscreva-se!",
+    "imagen": "imagenes/portugues.png",
+    "precio": "R$ 50",
+    "enlace": "https://www.udemy.com/curso-portugues"
+  },
+  {
+    "nombre": "Curso de Chinês",
+    "descripcion": "Aceite o desafio e aprenda Chinês passo a passo! Comece hoje!",
+    "imagen": "imagenes/chino.png",
+    "precio": "R$ 50",
+    "enlace": "https://www.udemy.com/curso-chino"
+  },
+  {
+    "nombre": "Curso de Russo",
+    "descripcion": "Domine o Russo do zero e comece sua jornada agora!",
+    "imagen": "imagenes/ruso.png",
+    "precio": "R$ 50",
+    "enlace": "https://www.udemy.com/curso-ruso"
+  },
+  {
+    "nombre": "Curso de Holandês",
+    "descripcion": "Domine o Holandês no seu ritmo e transforme seu futuro! Inscreva-se!",
+    "imagen": "imagenes/holandes.png",
+    "precio": "R$ 50",
+    "enlace": "https://www.udemy.com/curso-holandes"
+  },
+  {
+    "nombre": "Curso de Latim",
+    "descripcion": "O Latim nunca sai de moda! Domine-o com nossos cursos interativos!",
+    "imagen": "imagenes/latin.png",
+    "precio": "R$ 50",
+    "enlace": "https://www.udemy.com/curso-latin"
+  }
+]

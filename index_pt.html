@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Animalangs - Aprende Idiomas</title>
+    <meta name="description" content="Animalangs: Aprende idiomas como inglés, español, francés, alemán, italiano, portugués, chino, ruso, holandés y latín. Metodología única que te lleva a la fluidez en 100 días. ¡Cursos interactivos, divertidos y efectivos!">
+    <meta name="keywords" content="aprender idiomas, cursos de idiomas, aprender inglés, aprender francés, aprender alemán, aprender italiano, aprender español, aprender portugués, aprender chino, aprender ruso, aprender holandés, aprender latín, fluidez en idiomas, curso en línea, enseñanza de idiomas, idiomas online, clases de idiomas, estudiar idiomas, educación online, gramática fácil, conversación en inglés, vocabulario, inmersión lingüística">
+    <meta name="author" content="Animalangs">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Enlace a Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400&display=swap" rel="stylesheet">
+
+    <!-- Enlace a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilo general para las animaciones de fade-in */
+        .fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+            transform: translateY(-20px);
+        }
+
+        /* La clase visible se añadirá cuando el elemento esté en la vista */
+        .visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+
+        .imagen-destacada {
+            animation-delay: 0.4s;
+        }
+
+        section {
+            animation-delay: 0.6s;
+        }
+
+
+
+        .suscripcion {
+            animation-delay: 1s;
+        }
+
+        /* Transiciones suaves para botones y enlaces */
+        button, a {
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        button:hover, a:hover {
+            transform: scale(1.05);
+        }
+
+        /* Estilo del menú desplegable */
+        .blog-dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .blog-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(6, 5, 5, 0.115);
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .blog-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .blog-content a:hover {
+            background-color: #f1f1f104;
+        }
+
+        .blog-dropdown:hover .blog-content {
+            display: block;
+        }
+
+
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/hammerjs@2.0.8/hammer.min.js"></script>
+
+</head>
+
+<body>
+
+<!-- Encabezado con logo y menú -->
+<header class="encabezado-principal">
+  <a href="index.html" class="logo-container">
+      <img src="imagenes/logo-animalangs.png" alt="Animalangs Logo" id="logo-animalangs">
+  </a>
+  
+  <!-- Icono de menú hamburguesa para móviles -->
+  <div class="menu-hamburguesa">
+    <i class="fas fa-bars"></i>
+</div>
+
+  <nav class="menu-principal">
+    <a href="index_pt.html"><i class="fas fa-home"></i> Início</a>
+    <a href="cursos_pt.html"><i class="fas fa-graduation-cap"></i> Cursos</a>
+    <!-- Menú desplegable de Blog -->
+    <div class="blog-dropdown">
+      <a href="#"><i class="fas fa-blog"></i> Blog <i class="fas fa-caret-down"></i></a>
+      <div class="blog-content">
+        <a href="/blog/ingles.html"><img src="iconos/flag-usa.png" alt="Inglés" class="flag-icon"> Inglês</a>
+        <a href="/blog/frances.html"><img src="iconos/flag-france.png" alt="Francés" class="flag-icon"> Francês</a>
+        <a href="/blog/aleman.html"><img src="iconos/flag-germany.png" alt="Alemán" class="flag-icon"> Alemão</a>
+        <a href="/blog/italiano.html"><img src="iconos/flag-italy.png" alt="Italiano" class="flag-icon"> Italiano</a>
+        <a href="/blog/espanol.html"><img src="iconos/flag-spain.png" alt="Español" class="flag-icon"> Espanhol</a>
+        <a href="/blog/portugues.html"><img src="iconos/flag-brazil.png" alt="Portugués" class="flag-icon"> Português</a>
+        <a href="/blog/chino.html"><img src="iconos/flag-china.png" alt="Chino" class="flag-icon"> Chinês</a>
+        <a href="/blog/ruso.html"><img src="iconos/flag-russia.png" alt="Ruso" class="flag-icon"> Russo</a>
+        <a href="/blog/holandes.html"><img src="iconos/flag-netherlands.png" alt="Holandés" class="flag-icon"> Holandês</a>
+        <a href="/blog/latin.html"><img src="iconos/flag-vatican.png" alt="Latín" class="flag-icon"> Latim</a>
+      </div>
+    </div>
+    <a href="contacto_pt.html"><i class="fas fa-envelope"></i> Contato</a>
+  </nav>
+  <div class="acciones-encabezado">
+    <div class="flags">
+      <a href="index_en.html"><img src="iconos/flag-usa.png" alt="English" class="flag-icon"></a>
+      <a href="index.html"><img src="iconos/flag-spain.png" alt="Español" class="flag-icon"></a>
+      <a href="index_pt.html"><img src="iconos/flag-brazil.png" alt="Português" class="flag-icon"></a>
+    </div>
+  </div>
+</header>
+  
+
+
+
+
+
+
+<section class="seccion-bienvenida">
+  <div class="contenido-bienvenida">
+    <h2>Domine um idioma em apenas 15 semanas</h2>
+    <p>Comece agora e conquiste a fluência em 100 dias com nosso método exclusivo!</p>
+    <a href="cursos_pt.html" class="btn-bienvenida">Comece agora mesmo!</a>
+    <div class="detalles">
+      <span class="fecha-inicio">Garanta 70% de desconto ao comprar diretamente com a gente, sem intermediários!</span>
+    </div>
+  </div>
+  <div class="ilustracion-bienvenida">
+    <img src="imagenes/ilustracion_home.png" alt="Ilustración de bienvenida">
+  </div>
+</section>
+
+<!-- Hero Banner con Texto y Video -->
+<section class="hero-text">
+    <div class="hero-content">
+        <h1 class="hero-title">Seu caminho para a fluência começa aqui</h1>
+        <p class="hero-subtitle">Do A1 ao C2, guiamos você em cada passo.</p>
+        <p class="hero-subtitle">Clique para começar e escolha seu curso!</p>
+        <a href="cursos.html"><button class="hero-button">Comece Agora!</button></a>
+    </div>
+  </section>
+  
+
+<section class="hero-video">
+  <video autoplay muted loop class="video-destacado fade-in">
+    <source src="videos/Básico_pt.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos.
+  </video>
+</section>
+
+
+
+
+
+
+
+<!-- Sección mejorada -->
+<section class="fade-in seccion-niveles">
+  <div class="encabezado-cursos">
+    <h2 class="titulo-seccion">6 Cursos pelo Preço de 1</h2>
+    <p class="subtitulo-seccion">Pare de pagar por cursos individuais! Tenha acesso a todo o conteúdo do A1 ao C2 em um único pacote acessível.</p>
+  </div>
+</section>
+
+
+
+<div class="nivel-container">
+  <!-- Columna 1: Botones de nivel -->
+  <div class="level-buttons">
+    <button class="btn-level" id="btn-beginner">
+      <span class="icon">🐣</span> Básico
+    </button>
+    <button class="btn-level" id="btn-intermediate">
+      <span class="icon">🔥</span> Intermediário
+    </button>
+    <button class="btn-level" id="btn-advanced">
+      <span class="icon">👑</span> Avançado
+    </button>
+  </div>
+
+  <!-- Columna 2: Contenedor de información del nivel seleccionado -->
+  <div class="columna-info-nivel">
+    <div class="info-nivel">
+      <h3 id="tituloNivel">Principiante</h3>
+      <p id="descripcionNivel">Aprende las bases y comienza a hablar desde el primer día.</p>
+      <img id="imagenNivel" src="imagenes/nivel_basico.png" alt="Imagen de nivel Beginner" class="imagen-nivel">
+    </div>
+  </div>
+
+  <!-- Columna 3: Lista de lecciones del nivel -->
+  <div class="columna-lecciones">
+    <!-- Nivel Principiante -->
+    <div class="contenedor-leccion">
+      <h4>Sobre mí</h4>
+      <p>Aprende cómo hablar sobre ti mismo: tu nombre, trabajo, edad, etc.</p>
+      <div class="week-badge">Week 1</div>
+    </div>
+    <div class="contenedor-leccion">
+      <h4>Conjugación</h4>
+      <p>Aprende cómo cambiar la terminación de los verbos en presente.</p>
+      <div class="week-badge">Week 2</div>
+    </div>
+    <div class="contenedor-leccion">
+      <h4>Objetos y Cosas</h4>
+      <p>Aprende a describir objetos a tu alrededor con detalles.</p>
+      <div class="week-badge">Week 3</div>
+    </div>
+  <div class="contenedor-leccion">
+    <h4>Descripciones Básicas</h4>
+    <p>Describa personas, lugares y actividades de forma básica.</p>
+    <div class="week-badge">Week 4</div>
+  </div>
+  <div class="contenedor-leccion">
+    <h4>Conversación Simple</h4>
+    <p>Participa en conversaciones simples del día a día.</p>
+    <div class="week-badge">Week 5</div>
+  </div>
+
+  <!-- Nivel Intermedio -->
+  <div class="contenedor-leccion">
+    <h4>Tiempos Pasados</h4>
+    <p>Aprende a describir tu rutina diaria y tiempos pasados.</p>
+    <div class="week-badge">Week 6</div>
+  </div>
+  <div class="contenedor-leccion">
+    <h4>Opiniones y Expresiones</h4>
+    <p>Exprésate y comunica tus pensamientos e ideas.</p>
+    <div class="week-badge">Week 7</div>
+  </div>
+  <div class="contenedor-leccion">
+    <h4>Diálogos y Preguntas</h4>
+    <p>Practica hacer preguntas y mantener un diálogo fluido.</p>
+    <div class="week-badge">Week 8</div>
+  </div>
+  <div class="contenedor-leccion">
+    <h4>Narración y Relatos</h4>
+    <p>Aprende a relatar historias de forma clara.</p>
+    <div class="week-badge">Week 9</div>
+  </div>
+  <div class="contenedor-leccion">
+    <h4>Comprensión Oral</h4>
+    <p>Mejora tu comprensión oral a través de ejercicios prácticos.</p>
+    <div class="week-badge">Week 10</div>
+  </div>
+
+  <!-- Nivel Avanzado -->
+  <div class="contenedor-leccion">
+    <h4>Verbos Complejos</h4>
+    <p>Domina el uso avanzado de verbos reflexivos y de movimiento.</p>
+    <div class="week-badge">Week 11</div>
+  </div>
+  <div class="contenedor-leccion">
+    <h4>Frases Idiomáticas</h4>
+    <p>Aprende frases avanzadas usadas por hablantes nativos.</p>
+    <div class="week-badge">Week 12</div>
+  </div>
+  <div class="contenedor-leccion">
+    <h4>Conexiones y Transiciones</h4>
+    <p>Mejora la fluidez y conecta ideas en tus oraciones.</p>
+    <div class="week-badge">Week 13</div>
+  </div>
+  <div class="contenedor-leccion">
+    <h4>Debates y Argumentación</h4>
+    <p>Participa en debates y presenta tus argumentos.</p>
+    <div class="week-badge">Week 14</div>
+  </div>
+  <div class="contenedor-leccion">
+    <h4>Pronunciación Avanzada</h4>
+    <p>Perfecciona la pronunciación de sonidos complejos.</p>
+    <div class="week-badge">Week 15</div>
+  </div>
+</div>
+
+<!-- Sección 1: Video de Presentación -->
+<section class="seccion-pantalla video-seccion">
+  <video autoplay muted loop class="video-centrado">
+    <source src="videos/primeiro_video.mp4" type="video/mp4">
+    O seu navegador não suporta vídeos.
+  </video>
+</section>
+
+<!-- Sección 2: Imagen 1 -->
+<section class="seccion-pantalla imagen-seccion">
+  <img src="imagenes/segunda_imagen_pt.png" alt="Imagen Sección 2" class="imagen-centrada">
+</section>
+
+<!-- Sección 3: Imagen 2 -->
+<section class="seccion-pantalla imagen-seccion">
+  <img src="imagenes/tercera_imagen_pt.png" alt="Imagen Sección 3" class="imagen-centrada">
+</section>
+
+
+<!-- Sección de Estadísticas -->
+<section class="estadisticas">
+  <div class="estadistica-item izquierda">
+    <div class="valor">4,7</div>
+    <div class="estrellas">
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star"></i>
+      <i class="fas fa-star-half-alt"></i>
+    </div>
+    <p class="descripcion">Alunos satisfeitos</p>
+  </div>
+  <div class="estadistica-item centro">
+    <div class="valor">10</div>
+    <i class="fas fa-language"></i>
+    <p class="descripcion">Idiomas oferecidos</p>
+  </div>
+  <div class="estadistica-item derecha">
+    <div class="valor">100,000+</div>
+    <i class="fas fa-users"></i>
+    <p class="descripcion">Alunos progredindo</p>
+  </div>
+  <!-- Ilustración al final de la sección -->
+  <div class="ilustracion">
+    <img src="imagenes/ilustracion.png" alt="Ilustración de éxito">
+  </div>
+</section>
+
+
+
+<!-- Sección: Nuestros Cursos con Carrusel -->
+<section class="slide-in-left" style="text-align: center; padding: 50px 0;">
+  <h2 style="font-size: 2.5rem; color: #4b5563; margin-bottom: 10px;">Nossos Cursos</h2>
+  <p style="font-size: 1.2rem; color: #4b5563; margin-bottom: 20px;">Aprenda idiomas de forma personalizada e no seu ritmo!</p>
+  
+  <!-- Botón Empieza Ahora con parpadeo -->
+  <a href="cursos_pt.html" class="btn-bienvenida blink" style="display: inline-block; padding: 12px 24px; background-color: #1f7037; color: #fff; text-decoration: none; border-radius: 5px; font-size: 1.2rem; margin-top: 20px;">Comece Agora</a>
+
+  <div class="carrusel-container" style="margin-top: 30px;">
+      <button class="prev">&#10094;</button> <!-- Botón "prev" -->
+      <div class="carrusel">
+          <div class="curso">
+              <img src="imagenes/ingles.png" alt="Curso Completo de Inglés">
+              <p>Domine o Inglês em 100 dias e abra novas oportunidades!!</p>
+          </div>
+          <div class="curso">
+              <img src="imagenes/frances.png" alt="Curso Completo de Francés">
+              <p>Aprenda Francês de forma rápida e torne-se um especialista em 100 dias!</p>
+          </div>
+          <div class="curso">
+              <img src="imagenes/aleman.png" alt="Curso Completo de Alemán">
+              <p>Fale fluente Alemão em 100 dias com nosso método interativo!</p>
+          </div>
+          <div class="curso">
+              <img src="imagenes/italiano.png" alt="Curso Completo de Italiano">
+              <p>Fale Italiano como um nativo em apenas 100 dias!</p>
+          </div>
+          <div class="curso">
+              <img src="imagenes/espanol.png" alt="Curso Completo de Español">
+              <p>Conquiste o Espanhol em 100 dias e conecte-se com o mundo.</p>
+          </div>
+          <div class="curso">
+              <img src="imagenes/portugues.png" alt="Curso Completo de Portugués">
+              <p>Domine o Português em 100 dias e explore o idioma de forma prática.</p>
+          </div>
+          <div class="curso">
+              <img src="imagenes/chino.png" alt="Curso Completo de Chino">
+              <p>Aprenda Chinês em 100 dias e domine o idioma mais falado do mundo.</p>
+          </div>
+          <div class="curso">
+              <img src="imagenes/ruso.png" alt="Curso Completo de Ruso">
+              <p>Aprofunde-se no Russo em 100 dias com lições dinâmicas!</p>
+          </div>
+          <div class="curso">
+              <img src="imagenes/holandes.png" alt="Curso Completo de Holandés">
+              <p>Aprende Holandés em 100 dias e abra portas na Europa.</p>
+          </div>
+          <div class="curso">
+              <img src="imagenes/latin.png" alt="Curso Completo de Latín">
+              <p>Domine o Latim em 100 dias e compreenda a raiz dos idiomas modernos.</p>
+          </div>
+      </div>
+      <button class="next">&#10095;</button> <!-- Botón "next" -->
+  </div>
+</section>
+
+
+<!-- Sección: Testimonios con Carrusel -->
+<section class="testimonios-container" style="padding: 50px 0; background-color: #f9f9f9; text-align: center;">
+  <h2 class="titulo-testimonios" style="font-size: 2.5rem; color: #fff; background-color: #1f7037; padding: 10px 20px; border-radius: 8px; display: inline-block; margin-bottom: 20px;">
+    Veja as opiniões dos nossos alunos: Suas Histórias de Sucesso!
+</h2>
+
+
+
+  <div class="carrusel-testimonios" style="display: flex; justify-content: center; align-items: center; position: relative; max-width: 1200px; margin: 0 auto; overflow: hidden; padding: 0 60px;"> <!-- Añadir padding para dejar espacio para las flechas -->
+    <button class="prev-testimonio" style="position: absolute; left: 0; top: 50%; transform: translateY(-50%); background: rgba(0, 0, 0, 0.2); border: none; padding: 15px; cursor: pointer; z-index: 1; font-size: 1.5rem;">&#10094;</button>
+    
+    <div class="testimonios" style="display: flex; transition: transform 0.5s ease-in-out; width: 100%;">
+      <div class="testimonio" style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
+        <img src="imagenes/testimonios_pt/asaph.png" alt="Testimonio Afrae" style="width: 100%; max-width: 1050px; height: auto; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+      </div>
+      <div class="testimonio" style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
+        <img src="imagenes/testimonios_pt/cicero.png" alt="Testimonio Alejandra" style="width: 100%; max-width: 1050px; height: auto; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+      </div>
+      <div class="testimonio" style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
+        <img src="imagenes/testimonios_pt/diego.png" alt="Testimonio Boris" style="width: 100%; max-width: 1050px; height: auto; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+      </div>
+      <div class="testimonio" style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
+        <img src="imagenes/testimonios_pt/guilherme.png" alt="Testimonio Carlos" style="width: 100%; max-width: 1050px; height: auto; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+      </div>
+      <div class="testimonio" style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
+        <img src="imagenes/testimonios_pt/josie.png" alt="Testimonio Carlota" style="width: 100%; max-width: 1050px; height: auto; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+      </div>
+      <div class="testimonio" style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
+        <img src="imagenes/testimonios_pt/luisete.png" alt="Testimonio Jaime" style="width: 100%; max-width: 1050px; height: auto; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+      </div>
+      <div class="testimonio" style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
+        <img src="imagenes/testimonios_pt/raquel.png" alt="Testimonio Miguel" style="width: 100%; max-width: 1050px; height: auto; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+      </div>
+      <div class="testimonio" style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
+        <img src="imagenes/testimonios_pt/rodrigo.png" alt="Testimonio Nayla" style="width: 100%; max-width: 1050px; height: auto; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+      </div>
+      <div class="testimonio" style="flex: 0 0 100%; display: flex; justify-content: center; align-items: center;">
+        <img src="imagenes/testimonios_pt/joao.png" alt="Testimonio Pablo" style="width: 100%; max-width: 1050px; height: auto; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+      </div>
+    </div>
+    
+    <button class="next-testimonio" style="position: absolute; right: 0; top: 50%; transform: translateY(-50%); background: rgba(0, 0, 0, 0.2); border: none; padding: 15px; cursor: pointer; z-index: 1; font-size: 1.5rem;">&#10095;</button>
+  </div>
+  <!-- Indicadores de progreso -->
+  <div class="indicadores">
+    <span class="indicador active"></span>
+    <span class="indicador"></span>
+    <span class="indicador"></span>
+    <span class="indicador"></span>
+    <span class="indicador"></span>
+    <span class="indicador"></span>
+    <span class="indicador"></span>
+    <span class="indicador"></span>
+    <span class="indicador"></span>
+  </div>
+</section>
+
+
+
+<!-- Formulario de Suscripción -->
+<section id="suscripcion" class="suscripcion fade-in">
+  <h2>Inscreva-se na nossa newsletter!</h2>
+  <form id="suscripcion-form" method="post">
+    <input type="text" id="nombre" name="nombre" placeholder="Seu nome" required>
+    <input type="email" id="email" name="email" placeholder="E-mail" required>
+    <button type="submit">Inscreva-se</button>
+  </form>  
+  <div id="mensaje-suscripcion"></div>
+</section>
+
+
+<!-- Pie de página -->
+<footer>
+    <div>
+        <h3>Animalangs</h3>
+        <p>Contato: info@animalangs.com</p>
+    </div>
+    <div>
+        <p>Siga-nos em:</p>
+        <a href="https://www.facebook.com/profile.php?id=61556576940972" target="_blank">
+            <img src="iconos/icons8-facebook-48.png" alt="Facebook" width="24" height="24">
+        </a>
+        <a href="https://www.instagram.com/animalangs_/" target="_blank">
+            <img src="iconos/icons8-instagram-48.png" alt="Instagram" width="24" height="24">
+        </a>
+        <a href="https://www.youtube.com/@AnimalangsEnglish/videos" target="_blank">
+            <img src="iconos/icons8-youtube-50.png" alt="YouTube" width="24" height="24">
+        </a>
+    </div>
+    <p>&copy; 2024 Animalangs. Todos os direitos reservados.</p>
+</footer>
+
+
+
+
+<!-- JavaScript para carrusel de testimonios -->
+<script>
+// JavaScript para carrusel de testimonios
+document.addEventListener('DOMContentLoaded', function() {
+    const carrusel = document.querySelector('.carrusel-testimonios .testimonios');
+    const testimonios = carrusel.querySelectorAll('.testimonio');
+    const indicadores = document.querySelectorAll('.indicadores .indicador');
+    let currentIndex = 0;
+    let autoPlayInterval;
+
+    // Función para mostrar el testimonio actual
+    function showTestimonio(index) {
+        const offset = -index * 100; // Cada imagen ocupa el 100% del contenedor
+        carrusel.style.transform = `translateX(${offset}%)`;
+        updateIndicators();
+    }
+
+    // Función para actualizar los indicadores
+    function updateIndicators() {
+        indicadores.forEach((indicador, i) => {
+            if (i === currentIndex) {
+                indicador.classList.add('active');
+            } else {
+                indicador.classList.remove('active');
+            }
+        });
+    }
+
+    // Función para iniciar la reproducción automática
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(() => {
+            currentIndex = (currentIndex + 1) % testimonios.length;
+            showTestimonio(currentIndex);
+        }, 3000);
+    }
+
+    // Función para detener la reproducción automática
+    function stopAutoPlay() {
+        clearInterval(autoPlayInterval);
+    }
+
+    // Navegación con los botones
+    document.querySelector('.prev-testimonio').addEventListener('click', () => {
+        currentIndex = currentIndex > 0 ? currentIndex - 1 : testimonios.length - 1;
+        showTestimonio(currentIndex);
+    });
+
+    document.querySelector('.next-testimonio').addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % testimonios.length;
+        showTestimonio(currentIndex);
+    });
+
+    // Permitir que los indicadores sean interactivos (opcional)
+    indicadores.forEach((indicador, i) => {
+        indicador.addEventListener('click', () => {
+            currentIndex = i;
+            showTestimonio(currentIndex);
+        });
+    });
+
+    // Detener el autoplay cuando el ratón esté sobre el carrusel
+    carrusel.addEventListener('mouseenter', stopAutoPlay);
+    carrusel.addEventListener('mouseleave', startAutoPlay);
+
+    // Inicia el autoplay
+    startAutoPlay();
+});
+
+</script>
+
+    
+
+
+
+<!-- Código de Tawk.to -->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/67032a6537379df10df30ba9/1i9i5r7l3';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+
+
+
+
+
+
+
+
+<script>
+// Obtener los botones de nivel
+const buttons = document.querySelectorAll('.btn-level');
+
+// Datos para cada nivel
+const nivelData = {
+  "btn-beginner": {
+    titulo: "Básico",
+    descripcion: "Aprenda o básico e comece a falar hoje mesmo!.",
+    imagen: "imagenes/nivel_basico.png",
+    lecciones: [
+      { titulo: "Falando Sobre Você", descripcion: "Descubra como falar sobre quem você é: nome, profissão, idade, e muito mais.", semana: "Semana 1" },
+      { titulo: "Conjugação Verbal", descripcion: "Aprenda a conjugar verbos no presente de forma prática e fácil.", semana: "Semana 2" },
+      { titulo: "Objetos e Detalhes", descripcion: "Domine a arte de descrever objetos e detalhes ao seu redor.", semana: "Semana 3" },
+      { titulo: "Descrevendo Pessoas e Lugares", descripcion: "Descreva pessoas, lugares e atividades de maneira clara e objetiva.", semana: "Semana 4" },
+      { titulo: "Conversação Básica", descripcion: "Participe de conversas do dia a dia com segurança e naturalidade.", semana: "Semana 5" }
+    ]
+  },
+  "btn-intermediate": {
+    titulo: "Intermediário",
+    descripcion: "Expresse-se com mais precisão e domine temas complexos.",
+    imagen: "imagenes/nivel_intermedio.png",
+    lecciones: [
+      { titulo: "Tempos Verbais no Passado", descripcion: "Aprenda a falar sobre sua rotina e acontecimentos passados.", semana: "Semana 6" },
+      { titulo: "Opiniões e Expressões", descripcion: "Comunique suas ideias e pensamentos com confiança.", semana: "Semana 7" },
+      { titulo: "Diálogos e Perguntas", descripcion: "Pratique fazer perguntas e manter diálogos de forma natural.", semana: "Semana 8" },
+      { titulo: "Leitura e Compreensão", descripcion: "Aprimore sua compreensão com uma variedade de textos.", semana: "Semana 9" },
+      { titulo: "Escrita Eficaz", descripcion: "Aprenda a escrever de forma clara e objetiva.", semana: "Semana 10" }
+    ]
+  },
+  "btn-advanced": {
+    titulo: "Avançado",
+    descripcion: "Mergulhe no idioma e aperfeiçoe suas habilidades.",
+    imagen: "imagenes/nivel_avanzado.png",
+    lecciones: [
+      { titulo: "Conversações Avançadas", descripcion: "Participe de diálogos profundos e enriquecedores.", semana: "Semana 11" },
+      { titulo: "Redação Avançada", descripcion: "Desenvolva suas habilidades de escrita com confiança.", semana: "Semana 12" },
+      { titulo: "Expressões e Gírias", descripcion: "Domine expressões e gírias como um nativo.", semana: "Semana 13" },
+      { titulo: "Debates e Argumentação", descripcion: "Aprimore suas habilidades para debater com clareza e convicção.", semana: "Semana 14" },
+      { titulo: "Apresentações de Impacto", descripcion: "Aprenda a fazer apresentações claras e envolventes.", semana: "Semana 15" }
+    ]
+  }
+};
+
+// Función para manejar el clic y actualizar las columnas
+const handleButtonClick = (event) => {
+  // Eliminar la clase 'active' de todos los botones
+  buttons.forEach(button => button.classList.remove('active', 'selected'));
+
+  // Agregar la clase 'active' y 'selected' al botón clicado
+  event.currentTarget.classList.add('active', 'selected');
+
+  // Obtener el ID del nivel seleccionado
+  const nivelId = event.currentTarget.id;
+  const data = nivelData[nivelId];
+
+  // Actualizar contenido de la columna 2
+  document.getElementById('tituloNivel').innerText = data.titulo;
+  document.getElementById('descripcionNivel').innerText = data.descripcion;
+  document.getElementById('imagenNivel').src = data.imagen;
+
+  // Actualizar lecciones de la columna 3
+  const leccionContainer = document.querySelector('.columna-lecciones');
+  leccionContainer.innerHTML = ''; // Limpiar contenido existente
+
+  data.lecciones.forEach(leccion => {
+    const leccionDiv = document.createElement('div');
+    leccionDiv.classList.add('contenedor-leccion');
+    leccionDiv.innerHTML = `
+      <div>
+        <h4>${leccion.titulo}</h4>
+        <p>${leccion.descripcion}</p>
+      </div>
+      <div class="week-badge">${leccion.semana}</div>`;
+    leccionContainer.appendChild(leccionDiv);
+  });
+};
+
+// Agregar evento de clic a cada botón
+buttons.forEach(button => {
+  button.addEventListener('click', handleButtonClick);
+});
+
+// Establecer el botón 'Principiante' como predeterminado cuando se carga la página
+document.addEventListener('DOMContentLoaded', () => {
+  const beginnerButton = document.getElementById('btn-beginner');
+  if (beginnerButton) {
+    beginnerButton.click(); // Simula el clic para mostrar el contenido inicial de principiantes
+  }
+});
+
+
+  </script>
+
+<script>
+// Seleccionamos el encabezado
+const header = document.querySelector('.encabezado-principal');
+
+// Escuchamos el evento de desplazamiento (scroll) en la ventana
+window.addEventListener('scroll', () => {
+  // Si la posición de desplazamiento es mayor a 50 píxeles, añadimos la clase 'scrolled'
+  if (window.scrollY > 50) {
+    header.classList.add('scrolled');
+  } else {
+    // Si volvemos hacia arriba, quitamos la clase 'scrolled'
+    header.classList.remove('scrolled');
+  }
+});
+</script>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const carrusel = document.querySelector('.carrusel');
+    const cursos = document.querySelectorAll('.carrusel .curso');
+    const prevButton = document.querySelector('.prev');
+    const nextButton = document.querySelector('.next');
+    let currentIndex = 0;
+    const totalCursos = cursos.length;
+
+    // Obtener el ancho exacto de cada tarjeta de curso
+    const cursoWidth = cursos[0].getBoundingClientRect().width;
+    const carruselContainerWidth = document.querySelector('.carrusel-container').offsetWidth;
+
+    // Calcular cuántas tarjetas se pueden mostrar al mismo tiempo en la vista
+    const visibleCourses = Math.floor(carruselContainerWidth / cursoWidth);
+
+    // Función para actualizar la posición del carrusel
+    function updateCarrusel() {
+        const offset = currentIndex * cursoWidth;
+        carrusel.style.transform = `translateX(-${offset}px)`;
+    }
+
+    // Evento para botón "next"
+    nextButton.addEventListener('click', () => {
+        if (currentIndex < totalCursos - visibleCourses) {
+            currentIndex++;
+        } else {
+            currentIndex = 0;
+        }
+        updateCarrusel();
+    });
+
+    // Evento para botón "prev"
+    prevButton.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+        } else {
+            currentIndex = totalCursos - visibleCourses;
+        }
+        updateCarrusel();
+    });
+
+    // Ajuste inicial del carrusel
+    updateCarrusel();
+
+    // Evento para ajustar el carrusel al cambiar el tamaño de la ventana
+    window.addEventListener('resize', () => {
+        const nuevoCursoWidth = cursos[0].getBoundingClientRect().width;
+        const nuevoCarruselContainerWidth = document.querySelector('.carrusel-container').offsetWidth;
+        visibleCourses = Math.floor(nuevoCarruselContainerWidth / nuevoCursoWidth);
+        updateCarrusel();
+    });
+});
+
+  </script>
+
+<script>
+  document.querySelector('.menu-hamburguesa').addEventListener('click', function() {
+      this.classList.toggle('active'); // Alterna la clase active
+      document.querySelector('.menu-principal').classList.toggle('active'); // Muestra/oculta el menú
+  });
+  </script>
+    
+  
+
+</body>
+</html>

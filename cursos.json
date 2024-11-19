@@ -1,0 +1,73 @@
+[
+    {
+      "nombre": "Curso de Inglés",
+      "descripcion": "Domina el Inglés en 100 días. ¡Empieza ahora!",
+      "imagen": "imagenes/ingles.png",
+      "precio": "13.99 USD",
+      "enlace": "https://www.udemy.com/course/ingles-5-palavras-curso-a1-espanol-iniciantes/?referralCode=FF3301CB152D3A5ADCC9"
+    },
+    {
+      "nombre": "Curso de Francés",
+      "descripcion": "Aprende Francés como nunca antes. ¡Conviértete en un experto!",
+      "imagen": "imagenes/frances.png",
+      "precio": "13.99 USD",
+      "enlace": "https://www.udemy.com/curso-frances"
+    },
+    {
+      "nombre": "Curso de Alemán",
+      "descripcion": "Descubre el Alemán con nuestra metodología interactiva.",
+      "imagen": "imagenes/aleman.png",
+      "precio": "13.99 USD",
+      "enlace": "https://www.udemy.com/curso-aleman"
+    },
+    {
+      "nombre": "Curso de Italiano",
+      "descripcion": "Sumérgete en el Italiano. ¡Habla como un nativo en solo 3 meses!",
+      "imagen": "imagenes/italiano.png",
+      "precio": "13.99 USD",
+      "enlace": "https://www.udemy.com/curso-italiano"
+    },
+    {
+      "nombre": "Curso de Español",
+      "descripcion": "El Español te espera. ¡Aprende fácil, rápido y diviértete!",
+      "imagen": "imagenes/espanol.png",
+      "precio": "13.99 USD",
+      "enlace": "https://www.udemy.com/curso-espanol"
+    },
+    {
+      "nombre": "Curso de Portugués",
+      "descripcion": "Portugués fluido en menos de lo que imaginas. ¡Inscríbete ahora!",
+      "imagen": "imagenes/portugues.png",
+      "precio": "13.99 USD",
+      "enlace": "https://www.udemy.com/curso-portugues"
+    },
+    {
+      "nombre": "Curso de Chino",
+      "descripcion": "¿Listo para el reto? Aprende Chino paso a paso.",
+      "imagen": "imagenes/chino.png",
+      "precio": "13.99 USD",
+      "enlace": "https://www.udemy.com/curso-chino"
+    },
+    {
+      "nombre": "Curso de Ruso",
+      "descripcion": "Domina el Ruso desde cero. ¡Comienza tu viaje lingüístico ahora!",
+      "imagen": "imagenes/ruso.png",
+      "precio": "13.99 USD",
+      "enlace": "https://www.udemy.com/curso-ruso"
+    },
+    {
+      "nombre": "Curso de Holandés",
+      "descripcion": "Holandés fluido a tu ritmo. ¡Inscríbete y transforma tu futuro!",
+      "imagen": "imagenes/holandes.png",
+      "precio": "13.99 USD",
+      "enlace": "https://www.udemy.com/curso-holandes"
+    },
+    {
+      "nombre": "Curso de Latín",
+      "descripcion": "El Latín nunca pasa de moda. ¡Domínalo con nuestros cursos interactivos!",
+      "imagen": "imagenes/latin.png",
+      "precio": "13.99 USD",
+      "enlace": "https://www.udemy.com/curso-latin"
+    }
+  ]
+  
